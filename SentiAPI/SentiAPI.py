@@ -22,4 +22,5 @@ if __name__ == "__main__":
     port = 3000
 
     server = simple_server.make_server(host, port, api)
+    print(f"Serving on {host}:{port}")
     server.serve_forever()
